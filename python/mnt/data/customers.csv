@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd 
 
 # Load CSVs
 customers = pd.read_csv('../data/customers.csv')
@@ -13,4 +13,3 @@ clean_customers.to_csv('../data/customers_clean.csv', index=False)
 clean_orders.to_csv('../data/orders_clean.csv', index=False)
 
 print("Cleaned data saved.")
-
