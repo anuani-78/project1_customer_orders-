@@ -1,7 +1,6 @@
 import pandas as pd
 # Sample data for customers.csv
-customers_data = {
-    "customer_id": [1, 2, 3],
+customers_data = {"customer_id": [1, 2, 3],
     "customer_name": ["Alice", "Bob", "Charlie"]
 }
 df = pd.DataFrame(customers_data)
