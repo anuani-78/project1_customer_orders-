@@ -1,8 +1,16 @@
 import pandas as pd
-# Sample data for customers.csv
-customers_data = {
-    "customer_id" : [1, 2, 3] , 
-    "customer_name": ["Alice", "Bob", "Charlie"]
-}
-df = pd.DataFrame(customers_data)
-print(df)
+
+# Load CSVs
+customers = pd.read_csv('../data/customers.csv')
+orders = pd.read_csv('../data/orders.csv')
+
+# Drop duplicates
+clean_customers = customers.drop_duplicates()
+clean_orders = orders.drop_duplicates()
+
+# Save cleaned data
+clean_customers.to_csv('../data/customers_clean.csv', index=False)
+clean_orders.to_csv('../data/orders_clean.csv', index=False)
+
+print("Cleaned data saved.")
+
