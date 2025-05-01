@@ -17,4 +17,9 @@ Simple pipeline to clean, load, and analyze customer orders using Python and SQL
 
 ## 📈 Output
 Top 3 customers by number of orders
+| customer_name | total_orders |
+|---------------|--------------|
+| Alice         | 3            |
+| Bob           | 1            |
+| Charlie       | 1            |
 
