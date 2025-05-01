@@ -5,9 +5,9 @@ df = pd.read_csv('../data/customers.csv')
 
 conn = psycopg2.connect(
     host="localhost",
-    database="data_engineer_practice",
-    user="postgres",
-    password="your_password"
+    database="project1_customer_orders",
+    user="anuani-78",
+    password="Repeat"
 )
 
 cur = conn.cursor()
