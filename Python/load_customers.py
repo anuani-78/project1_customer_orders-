@@ -1,0 +1,24 @@
+import pandas as pd
+import psycopg2
+
+df = pd.read_csv('../data/customers.csv')
+
+conn = psycopg2.connect(
+    host="localhost",
+    database="data_engineer_practice",
+    user="postgres",
+    password="your_password"
+)
+
+cur = conn.cursor()
+
+for _, row in df.iterrows():
+    cur.execute(
+        "INSERT INTO customers (customer_id, customer_name) VALUES (%s, %s)",
+        (row['customer_id'], row['customer_name'])
+    )
+
+conn.commit()
+cur.close()
+conn.close()
+print("Customers loaded.")
