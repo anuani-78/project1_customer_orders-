@@ -1,0 +1,26 @@
+# 📊 Customer Orders Insight Pipeline
+
+## 🔍 Overview
+This mini-project cleans, loads, and analyzes customer order data using Python and PostgreSQL.
+
+## 📁 Project Structure
+- `data/` → Input CSVs
+- `python/` → Load + clean scripts
+- `sql/` → Analytical queries
+
+## ⚙️ Tech Stack
+- Python (pandas, psycopg2)
+- PostgreSQL
+- GitHub
+
+## ✅ Steps
+1. Clean & deduplicate CSVs
+2. Load into PostgreSQL
+3. Query top 3 customers by order count
+
+## 📈 Sample Output
+| customer_name | total_orders |
+|---------------|--------------|
+| Alice         | 3            |
+| Bob           | 1            |
+| Charlie       | 1            |
